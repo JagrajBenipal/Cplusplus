@@ -1,0 +1,40 @@
+******************************************************************************
+<assessment name example: Workshop - #2 (Part-1)>
+Full Name : Jagraj Singh Benipal
+Student ID#: 156374217
+Email : jbenipal1@myseneca.ca
+Section : ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+   
+               
+
+                                          ANSWERS:
+
+
+1. Because in cent1 and cent3, we get the exact number of cents in price1 and price3 respectively, but in case 2, we see that there is no rounding off and when we run the code, we get a value like 10.119999999999999 in case 2, so it doesn’t properly represent cents in price2.
+
+2. Taking example for 20$ bill. 
+   #define TWENTY 20
+   total=qp * ps + qs * pm + qt * pl
+   tdb= total/TWENTY                            // tdb= number of twenty dollar bills
+   remaining= total%TWENTY
+   printf(“ Twenty %d %0.2lf00\n”, tdb, total);
+
+3. One way we know is to use the casting, like converting an integer to floating point type.
+     Another way can be using a fmod function. Like using fmod function, with an allotted variable a1, we can code as:
+    toonie1 = total / 2;
+    a1 = fmod(total, 2);
+    printf("Toonies  %3d %9.4lf\n", toonie1, a1);
+   
+   
+   
+
+   
+    
+    
+    
+
+

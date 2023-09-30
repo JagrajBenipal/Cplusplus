@@ -1,0 +1,26 @@
+/********************************************************************
+                        Workshop 3 part 2
+Full Name  : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZBB
+I have done all the coding by myself and only copied the code that my
+ professor provided to complete my workshops and assignments.
+********************************************************************/
+
+I learned how to define a class with both access specifiers by doing this workshop, i.e. private and public. The members defined in the public specifier are accessible from outside of the class. Members defined in the private specifier, on the other hand, cannot be accessed or viewed from outside the class. For instance:
+    class Bar {
+        char m_Title[MAX_TITLE_CHAR + 1]{};
+        char m_fillCh{};
+        int m_sample{};
+        bool m_valid = false;
+    public:
+        void set(const char* title, const char bar, int length);
+        void draw() const;
+        bool validBar();
+        void emptyBar();
+    };
+
+For example, in set() function, any private member variables, such as m_fillCh, could be used.. Just like m_fillCh = bar; to store the incoming parameter 'bar' into m_fillCh to indicate the character that will be used to fill into the bar chart. This member function can change the state of an object.  I also defined a member function to query the state of an object, such as, void draw() const; This ensures that the object will not be modified.. 
+In addition, cout.width(MAX_TITLE_CHAR);  cout.fill('.');  cout.setf(ios::left); is a way to use standard library facilities to format data inserted into the output stream. cout.width() determines the minimum number of characters to be written in the output stream. The character inside cout.fill() is used by output insertion functions to fill spaces with the character specified to the field width. cout.setf(ios::left); this specify left-justification. 
+The most difficult thing to manage in this workshop, in my opinion, is defining a pointer to a class, i.e. Bar* bar = nullptr; By using it, I could use the Bar class in BarChart.cpp to validate the bar status and draw the bars if they are in good status. At first, I misplaced the dynamic allocation of Bar pointer "bar = new Bar[m_numOfSample];" statement into "BarChart::add". This gave me wrong output as it only printed the last bar. But after carefully examining it, I found that I should put this statement in "BarChart::init".

@@ -1,0 +1,14 @@
+answers:
+
+1. I had a lot of problems while making the table and I was not able to make a symmetric table and it was frustrating, but gradually I solved it. The expression which I found the most difficult was the scanf. It was going to be used through out this assignment. After getting knowledge of scanf, I tried doing my assignment again and then also I faced a lots of errors, but at the end I was able to do it.
+
+2. In this whole assignment we have used deMorgan's law a lot of times, specially in the second part of the assignment. It was very helpful to make the table in the second part.
+
+3. Because  if we used a lots of variables, it might be difficult for the user to understand the code. So, it is better to use variables only when they are less in number, otherwise they might be a difficult to handle for the user.
+
+
+
+
+
+
+

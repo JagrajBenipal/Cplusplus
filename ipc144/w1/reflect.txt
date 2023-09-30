@@ -1,0 +1,3 @@
+﻿1. I have learnt how to use the “printf” and print your required result. I also learnt about how to print my code in next line and have spaces between them. Moreover, I got to know about using the ssh and sftp.
+2. ssh stands for secure shell and through it I was able to make a secure connection with Seneca matrix account.
+3. sftp stands for secure file transfer protocol and it uses ssh to safely submit my workshop.

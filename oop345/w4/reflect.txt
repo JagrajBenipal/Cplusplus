@@ -1,0 +1,11 @@
+///*
+// Name: Jagraj Singh Benipal
+// Seneca email: jbenipal1@myseneca.ca
+// Student ID: 156374217
+// Date: FEB 12, 2023
+// I have done all the workshop by myself and have only copied the code provided
+// by professor.
+//*
+
+To me, it was one of the most difficult workshops I have ever done in this course.
+It took me days to work and understand, sometimes I just wanted to give up but luckily, I was still able to finish it. The Child and Toy has the composition relationship where the Child class has an array of toy class. When it is destroyed, it destroys the Toy array as well. For ConfirmOrder and Toy, they have the aggregation relationship. Although the ConfirmOrder has an array of Toy, it couldn’t destroy the Toy member, as it can only switch the pointer to nullptr. 

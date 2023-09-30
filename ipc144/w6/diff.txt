@@ -1,0 +1,14 @@
+In line number 12 of your output:
+The output should be:
+Enter your monthly NET income: $6225.88
+                                   ^
+But your output is: 
+Enter your monthly NET income: $6226.88
+                                   ^
+
+Unmatched character details:
+The character in column 36 is supposed to be:
+  [5] ASCII code(53)
+but you printed
+  [6] ASCII code(54)
+

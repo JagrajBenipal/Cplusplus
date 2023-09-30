@@ -1,0 +1,13 @@
+/*
+Name: Jagraj Singh Benipal
+Seneca email: jbeipal1@myseneca.ca
+Student ID: 156374217
+Date: April 7, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+As a student who has completed OOP244 and IPC144, I found OOP345 to be much more challenging. The course required a deeper understanding of C++ programming language concepts and involved complex projects that were harder to tackle. Due to the extensive course material, I often found myself struggling to keep up with the course pace, resulting in additional hours of study outside of class. 
+
+Despite these challenges, I am grateful for the hard work and detailed explanations provided by Professor Gvarmi. His extensive knowledge helped me navigate through the course material, and I would not have been able to complete the course without his dedication. I am sure he don't even know my name personally, because I was only able to attend the online recorded lectures due to my work shifts.
+
+I was not able to perform good in midterm of my oop exam. I was quite confident that I could easily score past 80%, but I didn't get good grades. It was a major shock for me. So I practiced and studied even harder. Managing oop with my part time job at tim's was the hardest thing I have ever done in my life. Again, thank you Prof. Gvarami Labartkava, it was lovely being your student.

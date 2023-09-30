@@ -1,0 +1,34 @@
+/*
+*****************************************************************************
+			  Workshop - #10 Reflection
+Full Name  : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZBB
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my professor
+provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+TODO 1:
+The search function takes three parameters. The first is an array of templated objects with the same data type as the Collection type; I defined a typename T for this parameter.
+The second parameter is an integer that represents the compared index. The third is another value that acts as a key to achieving the desired result; I defined a new typename C for it because it is a different data type than the first argument. This function will return a boolean value (true or false).
+If an array element matches the key value, "True" is returned; otherwise, "False" is returned.
+
+TODO 2:
+This search function takes four parameters. The first is an array of templated objects with the same data type as the Collection type; I defined a typename T for this parameter.
+The second parameter is an integer that represents the compared index. The third is another value that serves as a key to achieving the desired result; I defined a new typename C for it because it is a different data type than the first argument. The fourth is another key to search for in the array. Because it is a different data type with the first two parameters, I defined another typename H for it.
+This function will produce an integer (index number or -1).
+If an array element matches both keyA and keyB values, the index number(i) is returned; otherwise, -1 is returned to indicate that no matching result was found.
+
+TODO 3:
+By overloading the insertion operator, this function displays all of the elements in an array. I just defined one typename T, as well as tContainer, which has a Collection class of type T (Collection tempplate).
+This is due to the fact that this function requires two parameters (a reference of ostream object and a collection template). I used a FOR loop to iterate through the array, insert each element into the ostream, and then return the ostream to main.
+
+TODO 4:
+This function adds the new item to the collection class. Because both Collection and Object should be of the same type, I defined a single typename T.
+It has a simple code that overrides the += operator, which is already defined in Collection.h, and then returns the Collection to main.
+
+In this workshop, I learned how to create a function template, which is very useful if several types of parameters must be passed into the function. A function template can be readily called. The most challenging part of this session was defining the parameters that must be supplied into the function.
+To complete the most recent project milestone, I needed to implement the base class (Publication) and the derived class (Book) to accomplish this milestone. In addition, the rule of three was employed in this milestone.

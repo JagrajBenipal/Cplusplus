@@ -1,0 +1,24 @@
+/*
+Name: Jagraj Singh Benipal
+Seneca email: jbeipal1@myseneca.ca
+Student ID: 156374217
+Date: March 19, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+1. I have used STL functions in my workshop. Like:
+ ifstream to read data from a file.
+ string to store strings value.
+ stringstream to convert strings to numerical values for m_shelfDay, m_amount, m_price.
+ getline to read data from a file line by line.
+ for_each to loop over the vector c_items and print its elements out to the program.
+ sort to sort the elements of the c_items vector by description, shelf life, stock, and price.
+ merge to merge the elements of two vectors c_items and b.c_items based on their prices sorting.
+ any_of to check if a specific item with a specific type in the vector is in stock or out of stock.
+ copy_if to copy elements from one container to another based on a specific amount with a specific type.
+
+2. Algorithms have functions that are easy to understand because they use common names like "sort" and "any_of" that tell you what the function does. These built-in functions are easier to use because you know what they do just by their name. 
+They can be used over and over again within or outside of a program. For instance, if you need to sort an array in C++, you can include the algorithms library and use the "sort" function to accomplish your task. This way, you don't have to write the sorting function from scratch every time you need to sort an array.
+Also, the functions in algorithms are standard, meaning they have a familiar way of achieving the goal.
+
+3. The accessibility of vector and list is not the same. Vector has faster random access than list, which can affect how the "sort" function works. The "sort" function requires random access iterators as the first and second parameters to work correctly. Only vector can fulfill this requirement. If the object is a vector, the "sort" function can be applied directly. However, if the object is a list, it needs to be copied into a vector first, sorted, and then copied back into the list to avoid issues with the accessibility of the list and the "sort" function.

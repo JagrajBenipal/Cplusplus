@@ -1,0 +1,14 @@
+In line number 82 of your output:
+The output should be:
+Search by phone number: 3048005191
+                        ^
+But your output is: 
+Search by phone number: 
+                         ^
+
+Unmatched character details:
+The character in column 26 is supposed to be:
+  [3] ASCII code(51)
+but you printed
+  [Empty Line] ASCII code(0)
+

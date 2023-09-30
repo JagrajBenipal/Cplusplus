@@ -1,0 +1,12 @@
+/*********************************************************************
+                        Workshop 6 part 2
+ Name      : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZBB
+I have done all the coding by myself and only copied the code that my
+the professor provided to complete my workshops and assignments.
+**********************************************************************/
+
+I was able to create and implement copy constructors and copy assignment operators after completing this workshop. Basket(const Basket& toCopy), for example, can be used to copy a Basket to the original Basket, just like Basket b3 (b1). Basket& operator = (const Basket& toAssign) When executing the statement b1 = b3, this copy assignment operator can overload the (operator=). I also learned how to use existing objects to make new ones or assign values to them.
+Basket& operator+=(const Fruit ro), for example, can be used to add a Fruit to the Basket. In addition, I learnt how to create a user-defined input or output operator, which is useful for showing results for the class with resources.To display the desired output, use the helper function std::ostream& operator<<(std::ostream& ostr, const Basket& B) and member function std::ostream& display(std::ostream& ostr = std::cout)const. The defining and using the copy constructor and copy assignment operator were the most hardest things for me to get rid of. I couldn't tell the difference between them at the start of the workshop.I am now able to use them appropriately after a thorough walkthrough of the code. In addition, after completing this workshop, I learnt more about the Rule of Three (copy constructor, copy assignment and destructor), which is very essential.

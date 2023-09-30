@@ -1,0 +1,18 @@
+/*
+Name: Jagraj Singh Benipal
+Seneca email: jbeipal1@myseneca.ca
+Student ID: 156374217
+Date: April 1, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+Using binary files in this workshop has many advantages.
+Binary files are more effective at retrieving the data since they store data more compactly than normal text files.
+Also, since text characters are stored in binary files in numeric representation, it uses less memory.
+Last but not least, since a computer processes files in binary format rather than translating them back into human language, processing files in binary format saves a lot of time.
+Since we used binary files rather than text ones, the data processing was quickened.
+
+
+The order of the function's existing parameters can be changed, and the values of the arguments can be fixed, by binding the function to its arguments. Using a function as input, it essentially constructs a new function object with the ability to rearrange the arguments and provide a default value for a given argument. For example, we could set argument "a" to a default value at this point in the programme, and then for the next function call, we could set argument "b" to a default value in place of "a," or we could set a default value for both "a" and "b."
+
+When reading a large amount of data, multi-threading is typically faster than utilising just a single thread, and it also utilises fewer system resources. The task was completed by the software in 12 milliseconds when only one thread was used, and in 7 milliseconds while using two or four threads. I declared two vector containers in the workshop to hold the threads. After creating the threads using the binded functions, I added them to the two vectors. I then connected the vectors' threads together.

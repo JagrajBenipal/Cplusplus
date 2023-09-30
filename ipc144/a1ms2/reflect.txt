@@ -1,0 +1,22 @@
+﻿******************************************************
+                        Assignment 1 - Milestone 2
+Full Name  : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+******************************************************
+
+                                                                ANSWERS:
+
+1. There are various factors we must consider when naming a module or a library. For example, if we should specify the date when we made that module or library. Moreover, if there is any important information regarding that module or library, it can be mentioned. It is also advised to put the version of that project in the name. Periods or spaces should be avoided, instead, use capital letters and underscore.
+It is a suggested best practice to identify a library's header and source code files using the same name because it will be convenient to identify the files. Some people use random names, which is probably not advisable. For example, if we have a file named clinic.c and header files in a folder are a.h, xyz.h etc. , it will be difficult for a person to associate the header file. But if there was clinic.h, it would be very convenient and will not create any confusion.
+
+2. We utilised two modules for the successful development and compilation of this programme: "core" and "clinic," because it was easier to use the previous functions in the "core" module, and new functions in the "clinic" can use them to build the application. These two modules are not integrated into a single module because debugging would be much more difficult if an issue occurred due to the large number of function headers and variables. The two modules are maintained separate so that any errors may be identified, and the application can function smoothly.
+
+3. Modules are typically split into a header file and an implementation file and there are certain benefits to their division. First, the time taken to construct a structure is decreased. Also, without definition source code, we can link against code. It is advised to avoid the use of the term “inline”. We can see its benefit when it comes in big projects. So, when a program calls a function from one file to another, it needs to know the declaration of the function. The most important role of heeder file is to keep the design of code structure and implementation separate. 
+So, these were the main reasons why is there division of module into header file and the implementation file.
+

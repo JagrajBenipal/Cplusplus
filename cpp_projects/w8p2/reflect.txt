@@ -1,0 +1,20 @@
+/*
+*****************************************************************************
+			  Workshop - #8 Reflection
+Full Name  : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZBB
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my professor
+provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+After completing this workshop, I learned how to create an interface (iAccount) to put all virtual public member functions. For example,
+      virtual bool credit(double cre) = 0;
+      virtual bool debit(double deb) = 0;
+      virtual void monthEnd() = 0;
+      virtual void display(std::ostream&) const = 0;
+      virtual ~iAccount() {};
+The Account class (abstract base class) should then be derived from iAccount. SavingsAccount (concrete class) and ChequingAccount (concrete class) are derived from Account. The abstract class contains declared methods that are not redefined. The compiler understands that these methods are inside the class however there is no definition that can be executed for those methods. This is referred to as an abstract class. SavingAccount and ChequingAccount became concrete classes as a result of their derivation from Account. Furthermore, there are no pure virtual functions in the concrete class that allow it to be instantiated. In addition, the pure virtual functions in the interface were defined, which is also an important step.

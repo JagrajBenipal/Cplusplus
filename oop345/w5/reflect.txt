@@ -1,0 +1,18 @@
+/*
+Name: Jagraj Singh Benipal
+Seneca email: jbeipal1@myseneca.ca
+Student ID: 156374217
+Date: February 19, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+In this workshop, I have learned how to create lambda, functor, try-catch statement and pointer to function and how these come into play in different situation. A lambda
+expression is efficient when we build short length of logic and use few arguments or variables outside of lambda. Otherwise, functor is a function object
+that we can add attributes as much as we want and also, add methods as well. In another words, lambda is a functor which is more simpler and readable. We can
+use them in different situation.  
+We can verify if file is missing(empty) or not in client code. We can use if else state to verify if file is opened we can read each line of file, otherwise, we can simply
+display "Exception, file is missing!".
+To avoid the repeated logic in Movie and Book module, I would create two functions in module that one is for trimming left side and one is for trimming the right side
+of a certain data, so I don't need to duplicate the same logic of code several times.
+Default constructor is needed since compiler will not generate it unless we don't build it. However, we can simply add default keyword on default constructor in
+header file if we have no line of code for it.

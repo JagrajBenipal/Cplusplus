@@ -1,0 +1,60 @@
+/*****************************************************************************
+<assessment name example: Workshop - #7 (Part-2)>
+Full Name : Jagraj Singh Benipal
+Student ID#: 156374217
+Email : jbenipal1@myseneca.ca
+Section :ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************/
+
+Answer 1:
+There are various benefits and advantages of using user-defined types (structures) in this workshop. Benefits of using structures:
+1. I was able to store items with different data types. 
+2. It also increases code maintainability.
+3. Code readability becomes better.
+4. It is very useful when we are making programs which have lots of MATHS involved, like the game we made in this workshop.
+5. The code complexity is reduced.
+
+The following is the example of structure I used in my workshop 7:
+struct PlayerInfo
+{
+  int lives;
+  int treasureCount;
+  char symbol;
+  int currentMove;
+};
+struct GameInfo
+{
+  int gameLength;
+  int gameMoves;
+  int bombInput[MAX];
+  int treasureInput[MAX];
+  char p_revealed [MAX];
+};
+
+Answer 2:
+If we have to enhance this workshop to keep a history of games played including the endgame results, we will have to make two major logical changes. First, we need to make an array with int variables, which can track the history of games a player has played. Second, we have to create an another array with int variable, which will store our endgame results. If we make these two changes, we will be able to keep history of games played and endgame results.
+
+
+Answer 3:
+Honestly, this was the toughest workshop till now. I faced some challenges in this workshop, but most difficult one for me were these two:
+   I. I was confused on how I can store the value of bombs just by one scanf statement and use it in a loop properly. But then I figured that out, like this:
+
+while (i < (a.p_length / 5))
+    {
+        printf("   Positions [%2d-%2d]: ", y + 1, y + 5);
+        scanf(" %d %d %d %d %d", &b.bomb[y], &b.bomb[y + 1], &b.bomb[y + 2], &b.bomb[y + 3], &b.bomb[y + 4]);
+        y += 5;
+        i++;
+    }
+    y = 0;
+    i = 0;
+    printf("BOMB placement set\n\n");
+
+  II. Other one was to print the line which showed the positions I have already visited.
+                              ! - $ - ! - - . - . - - - - & - - - - $     <-- This line
+I spent a lot of time thinking about its solution. The mistake I was making was that I wasn’t changing the hidden position into the revealed position, which I eventually figured out. But I am happy that I was able to figure it out on my own.
+                                                   

@@ -1,0 +1,14 @@
+///*
+// Name: Jagraj Singh Benipal
+// Seneca email: jbenipal1@myseneca.ca
+// Student ID: 156374217
+// Date: FEB 5, 2023
+// I have done all the workshop by myself and have only copied the code provided
+// by professor.
+//*
+
+I've learned how to apply templates to classes and about the inheritance of class templates through this workshop.
+In order to generate classes based on the data type, I primarily used a class template. However, a function template is different from a class template in that it still works even if template arguments aren't explicitly written. But because in the process of constructing an object , we should include it in the class template.
+I created an equal operator to determine whether two objects are different Pair objects and an insertion operator to display objects of the Pair type.
+The add function's job in the Set module is to store unique data in memory while avoiding repeated values.
+When two values in a specialized template are double and their absolute difference is less than or equal to 0.01 we treat them as the same value.

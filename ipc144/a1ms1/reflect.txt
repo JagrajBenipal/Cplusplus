@@ -1,0 +1,27 @@
+                                                          REFLECTION:
+                                                         Assignment #1
+
+
+*****************************************************************************
+                        Assignment 1 - Milestone 1
+Full Name  : Jagraj Singh Benipal
+Student ID#:156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+1. From the core functions library, the function which was the most challenging to define for me was the displayFormattedPhone( ) because I had to display many quantities in it. As it had the 
+ conditions, that if phone_number is NULL, display the required string and then exit, and if the phone_number size is not equal to 10 or is a non digit, I had to display the required string and then exit the function. But I gradually understood and was able to solve my problem and now displayFormattedPhone( ) was working as it was expected.
+
+2. There is difference between assigning 0 and NULL to a variable. When we assign 0, we put the value ‘0’ in it, but when we use NULL, we say that right now the variable has no value contained it and therefore, it doesn’t hold any value. In case of pointers, we use NULL to tell that ‘no location’, but while initializing an integer, we use 0, which means, that variable has value ‘0’. So, both of them have different meanings and can be used as per our requirement.
+
+3. I would like to make him understand in easier language and I will use the Layman language:
+1) Imagine buffer as a cooking vessel. As the vessel is used to store a cooking material/dish temporarily, same buffer is the non-permanent storage, which is used to store output or input variables. 
+2) When we have to use the vessel again, we have to clean it, similarly, before we have to use the buffer again, we have to clear the buffer and then we can put the new input. 
+   By correlating it with vessel, I am sure my friend has now no confusion in understanding the topic of buffer.

@@ -1,0 +1,29 @@
+﻿/*****************************************************************************
+<assessment name example: Workshop - #6 (Part-2)>
+Full Name : Jagraj Singh Benipal
+Student ID#:156374217
+Email : jbenipal1@myseneca.ca
+Section :ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************/
+
+                                                                  Reflection:
+
+1. Parallel arrays are used to group the related data. In my workshop, I first used scanf and stored the value, later I printed them to construct the table using parallel arrays. A small sample from my code is shown below:
+                  printf("%3d  %5d    %5c    %11.2lf\n", 1, prior[0], fin[0], cost[0]);
+                  printf("%3d  %5d    %5c    %11.2lf\n", 2, prior[1], fin[1], cost[1]);
+                  printf("%3d  %5d    %5c    %11.2lf\n", 3, prior[2], fin[2], cost[2]);
+Here, we are printing the output (which we scanned earlier) with the same index as they are related by matching parallel array.
+                                                         The key is used for the data grouping. Like in the above case, at key 0, we have the matching information printed. So, we use key as the index of array to get the data.
+
+
+2. When we store an array, it is stored in the memory beginning with value 0. It becomes much easier for us when we start from 0 and it helps in arranging in the correct order and we won’t be confused. I have followed the same practice in my workshop which led my code to better efficiency. An example from my code:
+
+                 printf("%3d  %5d    %5c    %11.2lf\n", 1, prior[0], fin[0], cost[0]);
+Here, as there is ‘[0]’, first element of array prior, array fin and array cost will be printed.
+
+3. We can conceptually describe what an array is to a 5–8-year old child by giving an example of an almirah. In almirah we have consecutive boxes, and in those we put chocolates in first, candies in second, donuts in third and  Oreo in forth. We have to tell the kid that these all are SWEETS (one type of data) and so we can’t put salt, banana, clothes, or anything other in there, i.e., in programming terms, their datatype has to be the same.
+

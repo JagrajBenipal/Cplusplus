@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------------
+Name: Jagraj Singh Benipal
+Student ID: 156374217
+Email: jbenipal1@myseneca.ca
+Date: May 30th, 2022
+I have done all the coding by myself and only copied the code that
+ my professor provided to complete my workshops and assignments.
+---------------------------------------------------------------------*/
+
+In the Workshop2, I gained an understanding of the techniques required to use dynamic memory allocation and function overloading. Furthermore, when using the dynamic memory allocation method in the code, memory leaks must be avoided. Examples of dynamic memory allocation from my code:
+	Birthday* birthday = nullptr;
+	Birthday* temp = nullptr;
+	temp = new Birthday[numRecords];
+        birthday = new Birthday[numRecords];
+First, I must set the struct pointer (birthday, temp) to nullptr, which ensures that none of them point to a memory address that is not empty before they are executed in the statement. Following that, I must declare the size of the dynamically allocated array, which I can do by calling the function int noOfRecords (). It can determine how many records (lines) are in the bd.csv file and then return the value (number of records), which is stored in [numRecords]. To avoid memory leaks, each dynamically allocated memory must be deleted once its task is completed. The following statements were used:
+delete[] temp;
+temp = nullptr;
+This is intended to deallocate the memory associated with temp and then set the temp pointer to nullptr. There is a deallocate() function at the end of this programme that deletes all dynamically allocated memory.
+void deallocate() {
+	delete[] birthday;
+	birthday = nullptr;
+}
+
+For the function overload, I applied the following statements:
+	bool read(char* name, int index);
+	bool read(int* month, int i);
+	bool read(char flag, int* day);
+	bool read(int* year,bool check);
+There are four functions used to extract the values (name, month, day, year) from the bd.csv and then store them in the struct array birthday. These four functions are all called read and return boolean. According to the function prototype, I passed the corresponding parameter types into different read() functions when they were required.
+	read(tempName, i)
+	read(&temp[i].month,i)
+	read('c', & temp[i].day)
+	read(&temp[i].year,true)
+In this workshop, I implemented function overload in this manner. 
+The most difficult aspect of this workshop is preventing memory leaks. I must deallocate the dynamically allocated memory immediately after they have completed their task, not only in deallocate(), but also in both readBirthDate() and displayBirthDays() - I must deallocate the dynamically allocated memory immediately after they have completed their task, not only in deallocate(), but also in both readBirthDate() and displayBirthDays() - delete[].

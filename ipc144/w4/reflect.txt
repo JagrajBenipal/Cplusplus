@@ -1,0 +1,141 @@
+/******************************************************************************
+<assessment name example: Workshop - #4 (Part-2)>
+Full Name : Jagraj Singh Benipal
+Student ID#: 156374217
+Email : jbenipal1@myseneca.ca
+Section : ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation
+******************************************************************************/
+
+Answers:
+
+1. Selection in C programming means that the specific code will only run if the condition given is true. Selection is important because it allows a programmer to have multiple paths for a program. for example;
+
+  example 1.  do
+    {
+        printf("Pick some CABBAGES... how many did you pick? : ");
+        scanf("%d", &CABBAGES);
+        if (CABBAGES > cabbages)
+        {
+            printf("You picked too many... only %d more CABBAGES(S) are needed.\n", cabbages);
+        }
+        else if (CABBAGES < 1)
+        {
+            printf("ERROR: You must pick at least 1!\n");
+        }
+        else if (CABBAGES < cabbages)
+        {
+            printf("Looks like we still need some CABBAGES...\n");
+            cabbages -= CABBAGES;
+        }
+        else
+        {
+            printf("Great, that's the cabbages done!\n\n");
+            cabbages -= CABBAGES;
+        }
+    } while (cabbages > 0);
+  
+  example 2. do
+    {
+        printf("Pick some PEARS... how many did you pick? : ");
+        scanf("%d", &PEARS);
+        if (PEARS > pears)
+        {
+            printf("You picked too many... only %d more PEAR(S) are needed.\n", pears);
+        }
+        else if (PEARS < 1)
+        {
+            printf("ERROR: You must pick at least 1!\n");
+        }
+        else if (PEARS < pears)
+        {
+            printf("Looks like we still need some PEARS...\n");
+            pears -= PEARS;
+        }
+        else    
+        {
+            printf("Great, that's the pears done!\n\n");
+            pears -= PEARS;
+        }
+    } while (pears > 0);
+
+  example 3. do
+        {
+            printf("How many ORANGES do you need? : ");
+            scanf("%d", &oranges);
+            if (oranges < 0)
+            {
+                printf("ERROR: Value must be 0 or more.\n");
+            }
+        } while (oranges < 0);
+
+        printf("\n");
+        do
+        {
+            printf("How many PEARS do you need? : ");
+            scanf("%d", &pears);
+            if (pears < 0)
+            {
+                printf("ERROR: Value must be 0 or more.\n");
+            }
+        } while (pears < 0);
+
+
+2. Nested construct is when a programmer makes a programming construct within a programming construct. for example;
+
+example 1. do{
+        printf("How many APPLES do you need? : ");
+        scanf("%d", &apples);
+         
+         if (apples <0){
+             printf("ERROR: Value must be 0 or more.\n");
+         }
+    }while (apples < 0);
+
+example 2.  do{
+        printf("How many TOMATOES do you need? : ");
+        scanf("%d", &tomatoes);
+        if (tomatoes <0){
+            printf("ERROR: Value must be 0 or more.\n");
+        }
+    }while (tomatoes < 0);
+ 
+    For a non-technical person, we can make him understand by the following instructions: 
+Take the example 2 of this question. Like we have applied a do-while loop here. If we answer the question "How many TOMATOES do you need?” with a value less than 0, it will give us an error, saying "ERROR: Value must be 0 or more.”  This will continue till we put a whole number, and when we put a whole number, it will exit and go to the next code.
+
+3. My favourite iteration construct is do-while loop. What makes it different and unique from other iterations like while and for is that it will print minimum once irrespective of what condition we have put in the while part of do-while loop. Moreover, do-while loop is really easy to understand and apply. example:
+
+do
+    {
+        printf("Pick some APPLES... how many did you pick? : "); 
+        scanf("%d", &APPLES);                                    
+        if (APPLES > apples)                                          
+        {
+            printf("You picked too many... only %d more APPLE(S) are needed.\n", apples);
+        }
+        else if (APPLES < 1) 
+        {
+            printf("ERROR: You must pick at least 1!\n");
+        }
+        else if (APPLES < apples) 
+        {
+            printf("Looks like we still need some APPLES...\n");
+            apples -= APPLES;
+        }
+        else
+        {
+            printf("Great, that's the apples done!\n\n"); 
+            apples -= APPLES;
+        }
+    } while (apples > 0);
+
+
+
+
+
+
+
+

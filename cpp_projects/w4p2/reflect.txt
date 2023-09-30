@@ -1,0 +1,13 @@
+/********************************************************************
+Workshop 4 Part 2
+Name: Jagraj Singh Benipal
+Student ID: 156374217
+Email:  I have done all the coding by myself and only copied the code
+that my professor provided to complete my workshops and assignments.
+*********************************************************************/
+
+
+In this workshop, I learnt how to use default and overloaded constructors. If we take the example of "CleanerBot()", it was the default constructor with no arguments. And "CleanerBot(const char* Location, double Battery, int Brush, bool Active)" set's the value of location, battery brush and active. The overloading of constructor occurs when CleanerBot bot[num_bots] is instantiated, {} will call CleanerBot(), {"library", 82.5, 7, false} will call CleanerBot(const char* Location, double Battery, int Brush, bool Active). 
+In the destructors, I used CleanerBot::~CleanerBot(){ deallocate(); }, it will deallocate() which is void CleanerBot::deallocate(){ delete[] m_location;  m_location = nullptr;  m_battery = 0;  m_brush = 0;  m_active = false;}. It sets all member variables to safe empty state to prevent memory leak. Class member variables are as follows: class CleanerBot {char* m_location;  double m_battery;  int m_brush; bool m_active;...}; void resetInfo() releases the member pointers, it is void CleanerBot::resetInfo(){m_location = nullptr; m_battery = 0.0; m_brush = 0; m_active = false;}. 
+If invalid values are passed into CleanerBot& CleanerBot::set (e.g., location is empty, battery is zero, etc), it calls resetInfo(). I was confused with constructors at the start of this class because I didn't understand how to fully use them.However, after reviewing this topic, I came up with a clear idea that it is a special member function with the same name as its class. It's used to initialize certain valid values for an object's data members. When an object of a class is created, it will execute automatically.
+The restriction applied to the constructor is that constructor must not have a return type or void. This is because the compiler calls the constructor automatically.

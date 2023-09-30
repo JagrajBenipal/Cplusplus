@@ -1,0 +1,15 @@
+In line number 36 of your output:
+The output should be:
+   Positions [ 1- 5]: 1 0 0 1 1
+                      ^
+But your output is: 
+   Positions [ 1- 5]: ^C
+                      ^
+
+Unmatched character details:
+The character in column 23 is supposed to be:
+  [1] ASCII code(49)
+but you printed
+  [^] ASCII code(94)
+
+

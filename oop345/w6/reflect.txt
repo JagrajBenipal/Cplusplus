@@ -1,0 +1,11 @@
+/*
+Name: Jagraj Singh Benipal
+Seneca email: jbeipal1@myseneca.ca
+Student ID: 156374217
+Date: March 12, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+The memory of the pointers of the class Person is being managed by std::vector<Person*>. However, it is important to note that the memory of the objects of the Person class is not automatically managed. This is because the Person object dynamically allocates memory through the use of "new" in the "buildInstance" function found in the "Utilities" module. Thus, when the "College" module utilizes the vector to store the Person pointer, it is also responsible for deallocating the memory allocated for the Person pointer's instance.
+By using the try and catch approach can be extremely useful for detecting errors that may occur when reading an input file. Currently, in the workshop, this approach only catches errors that occur in the try section while reading the input file. However, C++ offers several standard exceptions, including "logic_error" and "runtime_error", that can be used to identify specific problems detected within the program. By adding additional catch conditions with these standard exceptions, we can catch more errors and use the ".what()" function to display the exact error that has occurred.
+In the context of the workshop, <Person> is storing the object by value in the container, which does not include any dynamic memory in the object. If there are any other pointer variables inside the object, the memory issue cannot be handled through the object, and direct access to that variable is required. Also, the "Person" class is a base class that inherits derived classes such as Student, Professor, and Employee. 

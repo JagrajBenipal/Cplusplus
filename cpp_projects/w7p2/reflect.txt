@@ -1,0 +1,14 @@
+*****************************************************************************
+			  Workshop - #7 Reflection
+Full Name  : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZBB
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my professor
+provided to complete my workshops and assignments.
+
+*****************************************************************************
+
+I learned how to send arguments to a base class constructor after this workshop. For example, the Minister::Minister(const char * idd, int age, int year, const char * name, const char * district): MemberParliament (idd, age). This statement demonstrates how to inherit a derived class from the bass class.
+I can also demonstrate how a member function of a derived class shadows the base class member function with the same identifier and access a showed member in base class. For instance, both of the header files (MemberParliament.h & Minister.h) contain std::ostream& write(std::ostream& os) const and std::istream& read(std::istream& in). MemberParliament::NewDistrict(district), MemberParliament::write(os) and MemberParliament::read(in). The challenge of this workshop was to implement the constructor in the Minister class with the constructor in the MemberParliament class. I also learned how to custom the input and output operators using these classes. The values in the parliament id number and age became empty after they became out of the scope of the MemberParliament constructor, which is why I was initially unable to solve the issue. After that, I carefully examined the lecture notes to discover how to give arguments to the base class constructor in order to address this issue.

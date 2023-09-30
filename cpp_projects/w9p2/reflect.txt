@@ -1,0 +1,40 @@
+/*
+*****************************************************************************
+			  Workshop - #9 Reflection
+Full Name  : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : jbenipal1@myseneca.ca
+Section    : ZBB
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my professor
+provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+I learnt how to derive a class with resource from a base class after this workshop. For example,
+ FullName::FullName(const char* name, const char* lastName) : Name(name) {
+      Name::cpyName(name);
+      cpyFName(lastName);
+   }
+This constructor implemented that derive FullName class from Name (base class) and using the resource (name) from the Name class. Apart from that, I learned how to apply the rule of three to the base and derived classes, which is important. For example,  
+      Name(const Name& toCopy);
+      Name& operator=(const Name& toAssign);
+      ~Name();
+
+      FullName(const FullName& toCopy);
+      FullName& operator=(const FullName& toAssign);
+      ~FullName();
+
+Rule of three includes copy contructor, copy assignment constructor and destructor.
+In addition, I used the skills that I learned to deal with reading and writing dynamic data from and to the data file.
+      m_value = new char[strlen(data) + 1];
+      strcpy(m_value, data);
+I was having trouble writing data to the file at the start of this workshop. I couldn't figure out why I could only output the integers 0 and 1 in the data file. After I traced my code line by line.
+I found that I forgot to implement the insertion operator overload. After I added the following code:
+ std::ostream& operator<<(std::ostream& ostr, const FullName& S);
+
+   std::ostream& operator<<(std::ostream& ostr, const FullName& FN) {
+      if (FN) FN.display(ostr);
+      return ostr;
+   }
+I solved the problem, and the output matches the expected result.

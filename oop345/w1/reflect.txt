@@ -1,0 +1,15 @@
+///*
+//Name: Jagraj Singh Benipal
+//Seneca email: jbenipal1@myseneca.ca
+//Student ID: 156374217
+//Date: JAN 22, 2023
+// I have done all the workshop by myself and have only copied the code provided 
+// by professor.
+//*
+
+In this workshop, I learned that how to use static variables, and the difference between internal and external linking. I declared a static variable named 'cnt' in my code.
+A static variable is only initialised once during the programme and ends at the completion. I also found that the keyword 'static' applies the 'internal linkage' functionality when used as a global variable. The major difference between internal and external linkage is that internal linkage is only effective within the same file. Otherwise, external linkage indicates that we might use it in another source file.
+ So I used two variables 'g_taxrate' and 'g_dailydiscount' in my code.
+The keyword 'extern' connects these to another source file (main) externally. This keyword makes the variable available for use in other source files, allowing me to use these two variables as I wanted to.
+I updated the variable 'description' to the character pointer array in part 2 to dynamically allocate the memory.
+Because it is stored in heap memory, I can allocate as much memory as I need at the time without causing memory waste or memory stack overflow. The destructor is called at the end of the programme, thus there is no memory leak.

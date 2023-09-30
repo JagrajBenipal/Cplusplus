@@ -1,0 +1,12 @@
+///*
+// Name: Jagraj Singh Benipal
+// Seneca email: jbenipal1@myseneca.ca
+// Student ID: 156374217
+// Date: JAN 29, 2023
+// I have done all the workshop by myself and have only copied the code provided
+// by professor.
+//*
+
+In this workshop, I learnt how the copy constructor and move constructor work differently, as well as the time difference in the performance of two different constructors.
+The copy constructor copies one object from another object using shallow copy and deep copy (allocating the memory size as the size of one another). However, the previously stated processes are not carried out in the move constructor. It simply moves the resources of one object to another by using an argument as a rvalue reference, therefore it is faster than a copy constructor.
+When we have completed our work, we simply set the data of the rvalue parameter object to nullptr or 0, resulting in only one object pointing to a single memory of data. Most importantly, while invoking the move constructor, we should utilize the std::move() function so that the object is considered a rvalue during the build time.

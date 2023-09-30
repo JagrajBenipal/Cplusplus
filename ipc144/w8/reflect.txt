@@ -1,0 +1,60 @@
+﻿*****************************************************************************
+<assessment name example: Workshop - #6 (Part-2)>
+Full Name : Jagraj Singh Benipal
+Student ID#:156374217
+Email : jbenipal1@myseneca.ca
+Section :ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************/
+
+                                                                  Reflection:
+
+
+Ans 1) Structure data types use a lot of memory. For example, the structure "ReportData" in our application comprises 9 variables, 6 of which are doubles and 3 of which are int types. Because double consumes up to 8 bytes of space and int takes up to 4 bytes, the structure ReportData requires at least 60 bytes of memory, but actually requires considerably more. By delivering information through an object's address, we can optimise the transfer of this information to functions. This eliminates the need to copy all member values, saving both space and time. Passing information by address saves space by merely copying the address. To print the contents in a tabular format, we utilised the "DisplayReportData" method.
+
+void displayReportData(const struct Reportdata)
+{
+printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", sku_num, *prod_price, *weight_lbs, *weight_kg, weight_g, calories, *total_serving, *cost_serving, *cost_calserving);
+}
+
+Ana 2) ReportData contains all of the data in CatFoodInfo, so we don't need to copy anything from there; instead, we just need to add new data that isn't in CatFoodInfo. Because four members are the same in both structures, we only need to declare and add five new members. Because CatFoodInfo is an input for ReportData, we must alter it as follows:
+
+previous ReportData
+struct ReportData
+{
+	int sku_num;
+	double prod_price;
+	int calories;
+	double weight_lbs;
+	double weight_kg;
+	int weight_g;
+	double total_serving;
+	double cost_serving;
+	double cost_calserving;
+};
+
+improved ReportData
+struct ReportData
+{
+	double weight_kg;
+	int weight_g;
+	double tservings;
+	double cost_serving;
+	double cost_calserving;
+};
+After displaying these, we'll need to edit the DisplayReportData and the printf statement to reflect the new structure.
+
+previous printf statement
+void displayReportData(const struct Reportdata)
+{
+printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", sku_num, *prod_price, *weight_lbs, *weight_kg, weight_g, calories, *total_serving, *cost_serving, *cost_calserving);
+}
+
+new printf statement
+void displayReportData(const struct Reportdata, const struct CatFoodInfo)
+{
+printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", sku_num, *prod_price, *weight_lbs, *weight_kg, weight_g, calories, *total_serving, *cost_serving, *cost_calserving);
+}

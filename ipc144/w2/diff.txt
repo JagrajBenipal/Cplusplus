@@ -1,0 +1,14 @@
+In line number 43 of your output:
+The output should be:
+Maker ([R]esidential,[C]ommercial): c
+                                 ^
+But your output is: 
+Maker ([R]esidential,[C]ommercial: c
+                                 ^
+
+Unmatched character details:
+The character in column 34 is supposed to be:
+  [)] ASCII code(41)
+but you printed
+  [:] ASCII code(58)
+

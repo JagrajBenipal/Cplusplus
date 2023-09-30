@@ -1,0 +1,53 @@
+/*****************************************************************************
+<assessment name example: Workshop - #5 (Part-2)>
+Full Name : Jagraj Singh Benipal
+Student ID#:156374217
+Email : jbenipal1@myseneca.ca
+Section :ZEE
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************/
+
+                                         Reflection 
+
+1. Two possible selection constructs to map integer value to the first three characters of the month are 'if else' and 'switch'. 
+
+(NOTE: We are discussing only last two cases as told in question 1)
+Example for 'if':
+ 
+int month;
+printf("what is the month number?: ");
+scanf("%d, month");
+
+if (month == 11){
+printf("NOV");
+}
+else if(month == 12){
+printf("DEC");
+else(
+printf("Invalid input");
+}
+
+
+Example for 'switch':
+
+int month;
+printf("what is the month number?: ");
+scanf("%d, month");
+
+switch(month){
+case 11:
+printf("NOV");
+break;
+case 12:
+printf("DEC");
+break;
+default:
+printf("Invalid input");
+}
+
+2. The three types of iteration constructs in c programming are while, do-while and for. The one I used in my workshop is ‘for’ loop along with if-else statements and logics combined because it simplifies the complex problem into simpler problems. Also, in for loop, we are able to adjust the flow of the program and instead of writing that code over and over again, we can repeat that code for specific number of times as we want.
+
+3. When I first run the program in vs code, I got some errors. To fix those errors, I executed different possible cases and had to identify where my problem was and what kind of error it was, like a syntax error, run time error or any logical error or it might be any semantic error. Then I checked my assumptions and variables. I found an error in for loop and I corrected it by using the right syntax. After that I input various values to test my program and it worked fine and there was no error this time.

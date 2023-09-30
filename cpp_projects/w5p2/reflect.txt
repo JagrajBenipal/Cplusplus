@@ -1,0 +1,43 @@
+/***********************************************************************
+                        Workshop 5 part 2
+ Name      : Jagraj Singh Benipal
+Student ID#: 156374217
+Email      : benipal2003@gmail.com
+Section    : ZBB
+I have done all the coding by myself and only copied the code that my
+ professor provided to complete my workshops and assignments.
+***********************************************************************/
+
+In this workshop, I learned how to define and create various types of operators. They included binary member operators "Hero& operator+=(Power& addPower)", unary operators "Chapter& operator++();", helper binary operator between classes "bool operator>(Hero& fh, Hero& sh)" and helper operators between a primitive type and a class "operator int()".
+I was quite confused by all of these operators at the start of this course. I had no idea how to differentiate between the various operators' types. I did't know how to define them. After I took saw the revision on the lecture recordings and did some research from Internet, 
+I was able to deal with them. I have to find out the left operand and right operand that next to the operator. Then, I have to decide what values have to return and pass to this operator. For example the following bool operator is used to find out which class (fh or sh) has higher power level:
+   bool operator<(Hero& fh, Hero& sh) {
+      if(fh.calPwrLvl() < sh.calPwrLvl())
+         return true;
+      return false;
+   }
+The following is used to calculate the discount price of the book
+   Book& Book::operator-=(double discount) {
+      m_price = m_price - discount;
+      return *this;
+   }
+For the part2, I needed to deal with DMA when there is a new Power class add to the existing Hero class.
+	herolist[1] += testing1;
+   Hero& Hero::operator+=(Power& addPower) {
+      Power* temp = nullptr;
+      temp = new Power[m_num_power + 1];
+      for (int i = 0; i < m_num_power; i++) {
+          temp[i] = m_hero_power[i];
+      }
+      delete[] m_hero_power;
+      m_hero_power = nullptr;
+      m_hero_power = new Power [++m_num_power];
+      for (int i = 0; i < m_num_power; i++) {
+         m_hero_power[i] = temp[i];
+      }
+      delete[] temp;
+      temp = nullptr;
+      m_hero_power[m_num_power - 1] = addPower;
+      m_power_lvl = calPwrLvl();
+      return *this;
+   }

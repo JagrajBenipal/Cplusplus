@@ -1,0 +1,12 @@
+/*
+Name: Jagraj Singh Benipal
+Seneca email: jbeipal1@myseneca.ca
+Student ID: 156374217
+Date: March 26, 2023
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*/
+
+Shared ownership of the object is necessary, the shared ptr rather than the unique ptr is used in the Database class. The shared ptr is used in the getInstance method to assure that there is only one instance of the Database object throughout the whole programme.
+Instead of a unique_ptr, the requirement of shared ownership would not be met because it would be impossible to return the object without doing so. 
+A template class was created to handle different data types for the "m_value" member variable. All function parameters were updated to use the template parameter "T". The destructor includes an iterator to display each "m_value" instance. Singleton can be used by using Anonymous Class inside the class, which allows for a singleton pattern without a named inner class or separate class. The anonymous class ensures the constructor is only called once during initialization and is not accessible outside the class, functioning like a private constructor.
+There might be a bug due to missing implementation of copy/move operations, causing the default copy/move constructor and assignment operator provided by the compiler to do a shallow copy/move of the resource attribute. This could result in unintended behavior such as multiple instances being copied or moved and destructed together. Specifically, the "m_database" attribute is a std::shared_ptr that manages a dynamically allocated resource with reference. If multiple instances of "Database" class share the same "m_database" resource, they could inadvertently affect each other, such as deleting one instance and causing memory leaks. The Database class is meant to have a single instance using the Singleton pattern, with the static member "m_database" creating the instance. The "getInstance" function ensures only one instance of the class is created. However, the code allows for multiple instances of the Database class to be created if "getInstance" is called with different filenames. This creates new instances with different "m_database" static members. As a result, calling "getInstance" twice with different filenames will create two instances of Database class, each with the custom constructor and destructor called twice.
